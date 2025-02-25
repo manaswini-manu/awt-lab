@@ -3,172 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Manaswini Upadhyayula">
-    <title>Manaswini Upadhyayula - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px;
-        }
-
-        .navbar a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-        }
-
-        h2 {
-            color: #333;
-            text-align: center;
-        }
-
-        .bio, .skills, .portfolio, .contact {
-            margin-bottom: 40px;
-        }
-
-        .portfolio-item {
-            display: inline-block;
-            width: 30%;
-            margin: 10px;
-            text-align: center;
-        }
-
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-        }
-
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .contact form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact input, .contact textarea {
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .contact button {
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact button:hover {
-            background-color: #444;
-        }
-
-    </style>
+    <title>Manaswini Upadhyayula's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Manaswini Upadhyayula</h1>
-        <p>Welcome to my Portfolio</p>
+        <h1>Manaswini Upadhyayula's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="navbar">
-        <a href="#bio">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="bio" class="bio">
+    <section id="about">
         <h2>About Me</h2>
-        <p>Hello, I am Manaswini Upadhyayula, a passionate professional with experience in web development and design. I specialize in creating beautiful and functional websites with an eye for detail and user experience. I believe in continuous learning and always seek to challenge myself with new projects and technologies.</p>
+        <p>Hello! I'm Manaswini Upadhyayula, a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, and JavaScript, and I love coding and learning new technologies.</p>
     </section>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Node.js</li>
-            <li>Web Design and UI/UX</li>
-            <li>Version Control (Git)</li>
-            <li>Responsive Design</li>
-        </ul>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <h2>My Work</h2>
-        <div class="portfolio-item">
-            <img src="project1.jpg" alt="Project 1">
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
             <h3>Project 1</h3>
-            <p>Description of project 1</p>
+            <p>Description of project 1. This project showcases my skills in web development.</p>
+            <a href="https://example.com/project1" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-            <img src="project2.jpg" alt="Project 2">
+        <div class="project">
             <h3>Project 2</h3>
-            <p>Description of project 2</p>
+            <p>Description of project 2. This project demonstrates my ability to work with APIs.</p>
+            <a href="https://example.com/project2" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-            <img src="project3.jpg" alt="Project 3">
+        <div class="project">
             <h3>Project 3</h3>
-            <p>Description of project 3</p>
+            <p>Description of project 3. This project highlights my design skills and creativity.</p>
+            <a href="https://example.com/project3" target="_blank">View Project</a>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
-        <form action="#">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
         </form>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Manaswini Upadhyayula | All Rights Reserved</p>
+    <footer>
+        <p>&copy; 2023 Manaswini Upadhyayula</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
